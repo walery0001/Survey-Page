@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>survey page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main>
+	
+<h1 id="title">What is your favorite IT department?</h1>	
+<p id="description">I am curious what the most used IT department</p>
+
+	
+
+<form action="/submit-main-survey" id="survey-form"> 
+<article>	
+<label for="fname" id="name-label">First Name</label>
+<input type="text" name="fname" id="name" class="myName" placeholder="Your First Name" required>
+</article>	
+<article>	
+<label for="sname" id="sename" >Second Name</label>
+<input type="text" name="sname" id="sname" class="myName" placeholder="Your Second Name" required>
+</article>
+<article>	
+<label for="Yemail"  id="email-label">Your email</label>
+<input type="email" name="Yemail" class="myName" id="email" placeholder="Pleace Your Email" required>
+</article>
+	
+
+		<section>
+<p>Please select your gender:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male" class="gender">Male</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female" id="female" class="gender">Female</label>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other" class="gender">Other</label>
+
+		</section>
+	<section>
+		<p>
+<label for="number" id="number-label">How long have you been dealing with your department:</label></p>
+<input type="number" name="number" id="number" placeholder="0 - Year"  min="1" max="70" required>
+		</section>
+   <section>
+   	<p>
+<label for="dropdown" id="dropdown">How much do you like it?</label></p>
+<select id="dropdown">
+<option value="poorly">1-2</option>
+<option value="enough">2-4</option>
+<option value="good">6-8</option>
+<option value="verygood">8-10</option>
+	</select>
+		<section>
+<p>Select your field:</p>
+<input type="checkbox" name="HelpDesk" value="HelpDesk">
+  <label for="HelpDesk">Help Desk</label><br>
+<input type="checkbox" name="ComputerGraphics" value="ComputerGraphics">
+  <label for="ComputerGraphics">Computer Graphics</label><br>
+<input type="checkbox" name="HTMLCSSJavaScript" value="HTMLCSSJavaScript">
+  <label for="HTMLCSSJavaScript">HTML CSS JavaScript</label><br>
+  <input type="checkbox" name="Python" value="Python">
+  <label for="Python">C++ C# Python</label><br>
+  <input type="checkbox" name="PHP" value="PHP">
+  <label for="PHP">PHP MySql</label>
+
+	</section>
+
+	<section>
+<p>Please write about your experience with IT</p>
+<textarea id="area" class="areaText" name="textarea" rows="auto" cols="auto"></textarea>
+	</section>
+
+	<section>
+<button id="submit">Submit</button>
+	</section>
+</form>
+</main>
+</body>
+</html>
